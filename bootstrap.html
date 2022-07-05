@@ -18,24 +18,39 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" >
 
         <style>
+            .navbar 
+            {
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+            .box img 
+            {
+                width: 100%;
+                height: 100%;
+            }
+            .box_fill img 
+            {
+                object-fit: fill;
+            }
+
             body 
             {
-                margin-bottom: 60px;
+                margin-bottom: 120px;
             }
 
         </style>
     
         <title>Bootstrap</title>
     </head>
-    <body class="bg-light text-white">
-        <header class="my-4 py-3">
+    <body class="bg-light text-light">
+        <header class="my-3 py-3">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 fixed-top">
                 <div class="container-fluid">
                     <a class="nav navbar-brand ms-auto" href="javascript:void(0)">
                         <h1><i class="fas fa-cog">Bootstrap</i></h1>
                     </a>
                 
-                    <button class="nav navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <button type="button" class="nav navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
     
@@ -56,7 +71,9 @@
             </nav>
         </header>
 
-        <div class="container-fluid bg-secondary text-center my-1 py-5">
+        <br/>
+
+        <div class="container-fluid bg-secondary text-center py-5">
             <div class="row">
                 <!-- Carousel -->
                 <div id= "carous" class="carousel slide" data-bs-ride="carousel">
@@ -71,7 +88,7 @@
                     </div>
                     
                     <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="container">
                                 <img src="Images/Aquamarine.png" alt="Aquamarine" class="img-fluid">
@@ -99,7 +116,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="container">
-                                <img src="Images/Patron.png" alt="Patronk" class="img-fluid">
+                                <img src="Images/Patron.png" alt="Patron" class="img-fluid">
                             </div>
                         </div>
                         <!-- Left and right controls/icons -->
@@ -114,51 +131,129 @@
             </div>
         </div>
 
+        <br/>
         
-        <div class="container-fluid bg-secondary text-center my-1 py-5">
-            <h2>Marketing Area</h2>
-        </div>
-
-        <div class="container-fluid my-1">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col bg-secondary">
-                    <h3>Pills</h3>
-                    <ul class = "nav nav-pills nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:void(0)">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:void(0)">Menu 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:void(0)">Menu 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="javascript:void(0)">Menu 3</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col bg-secondary">
-                    <p>Testing</p>
-                </div>
-                <div class="col bg-secondary">
-                    <p>Testing</p>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-light text-center">
+                            <h3>Marketing Area</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
-            <div class="container-fluid">
-                <a class="nav navbar-brand ms-auto" href="javascript:void(0)">
-                    <p class="lead"> <span id="year"></span> Copyright &copy; Andreas Eriksson</p>
-                </a>
+        <br/>
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#top">Back to Top</a>
-                    </li>
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 ">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3>Menu</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <ul class = "nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="javascript:void(0)">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="javascript:void(0)">Menu 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="javascript:void(0)">Menu 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="javascript:void(0)">Menu 3</a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h3>Article 1</h3>
+                        </div>
+                        <div class="card-body text-dark">
+                            <form>
+                                <p>This task is meant as an introduction to the use of Twitter Bootstrap a framework for CSS that is used by many web developers.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h3>Article 2</h3>
+                        </div>
+                        <div class="card-body text-dark">
+                            <form>
+                                <p>You will make the page entirely from scratch, using Bootstrap classes combined with your own CSS rules to style your page. A suggested layout is available on the last page of this file.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        </div>
+
+        <br/>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h4>Form</h4>
+                        </div>
+                        <div class="card-body text-dark">
+                            <form>
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 form-group">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" placeholder="Enter Name Here.." class="form-control">
+                                            <p class="alert alert-danger">Validation Message</p>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <label class="form-label">Email Adress</label>
+                                            <input type="text" placeholder="Enter Email Adress Here.." class="form-control">
+                                            <p class="alert alert-danger">Validation Message</p>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="text" placeholder="Enter Phone Number Here.." class="form-control">
+                                            <p class="alert alert-danger">Validation Message</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-1">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Add</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 box box_fill">
+                    <img src="Images/code.png" alt="Some Code">
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <footer class="container-fluid text-center fixed-bottom bg-dark py-4">
+                    <p class="lead"><span id="year"></span> Copyright &copy; Andreas Eriksson</p>
+                    <a class="link" href="#top">Back to Top</a>
         </footer>
     </body>
 </html>
